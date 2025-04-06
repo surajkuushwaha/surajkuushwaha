@@ -1,0 +1,87 @@
+---
+title: "Connecting MySQL Server from Windows to WSL-Troubleshooting Guide"
+publishedAt: "2025-04-06"
+summary: "A step-by-step troubleshooting guide for resolving connection issues when accessing a MySQL server running in WSL from Windows. Learn how to create proper user permissions and configure your environment for seamless cross-platform database access."
+---
+
+## Common Error
+
+When trying to connect to a MySQL server running in WSL (Windows Subsystem for Linux) from Windows, you might encounter this error:
+
+```shell
+ERROR: Host 'YOUR-PC-NAME' is not allowed to connect to this MySQL server
+```
+
+This error occurs because MySQL's default security settings only allow connections from `localhost`. When connecting from Windows to WSL, your Windows machine is seen as a different host, and thus the connection is blocked.
+
+## Solution: Creating New User with Proper Permissions
+
+To resolve this issue, you need to create a MySQL user that can connect from any host (`%`) and grant it the necessary permissions.
+
+### Step 1: Connect to MySQL Server
+
+First, connect to your MySQL server in WSL:
+
+```shell
+sudo mysql -u root -p
+```
+
+### Step 2: Create User and Grant Permissions
+
+Execute these SQL commands:
+
+```sql
+-- Create user for localhost connections
+CREATE USER 'your_username'@'localhost' IDENTIFIED BY 'your_password';
+GRANT ALL PRIVILEGES ON *.* TO 'your_username'@'localhost' WITH GRANT OPTION;
+
+-- Create user for remote connections (including from Windows)
+CREATE USER 'your_username'@'%' IDENTIFIED BY 'your_password';
+GRANT ALL PRIVILEGES ON *.* TO 'your_username'@'%' WITH GRANT OPTION;
+
+-- Apply the changes
+FLUSH PRIVILEGES;
+```
+
+### Command Explanation:
+
+- `CREATE USER`: Creates a new MySQL user account
+    - `'your_username'@'localhost'`: User can connect from localhost only
+    - `'your_username'@'%'`: User can connect from any host (`%` is a wildcard)
+- `IDENTIFIED BY`: Sets the user's password
+- `GRANT ALL PRIVILEGES ON *.*`: Gives all permissions on all databases and tables
+- `WITH GRANT OPTION`: Allows the user to grant permissions to other users
+- `FLUSH PRIVILEGES`: Reloads the grant tables to ensure changes take effect
+
+### Security Note:
+
+For production environments, it's recommended to:
+
+1. Use strong passwords
+2. Limit privileges to only what's necessary instead of `ALL PRIVILEGES`
+3. Specify exact host names instead of `%` when possible
+4. Consider using SSL/TLS for secure connections
+
+## Testing the Connection
+
+After creating the user, you can test the connection from Windows using:
+
+```shell
+mysql -h localhost -u your_username -p
+```
+
+If you're using a GUI tool like MySQL Workbench, use these connection details:
+
+- Host: localhost or WSL IP address
+- Port: 3306 (default)
+- Username: your_username
+- Password: your_password
+
+## Troubleshooting
+
+If you still can't connect:
+
+1. Verify MySQL is running in WSL: `sudo service mysql status`
+2. Check MySQL is binding to all interfaces: Review `bind-address` in `/etc/mysql/mysql.conf.d/mysqld.cnf`
+3. Ensure Windows Firewall allows the connection
+4. Verify the WSL network is accessible from Windows
