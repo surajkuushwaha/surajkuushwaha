@@ -156,7 +156,7 @@ export const DATA = {
         },
         {
             school: "Ranchhodlal Chhotalal Technical Institute",
-            // href: "https://uwaterloo.ca",
+            href: null,
             degree: "Diploma in Computer Engineering",
             logoUrl: "/rc_technical.png",
             start: "2017",
