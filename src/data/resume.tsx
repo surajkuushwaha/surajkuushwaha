@@ -10,7 +10,7 @@ export const DATA = {
     description:
         "Full Stack Developer with 3 years of experience building and scaling web applications at a startup. Passionate about creating impactful solutions and staying active in the tech community.",
     summary:
-        "I’m a Full Stack Developer with 3 years of experience building scalable web applications at [CultureX](https://www.influenzer.io/). With a background in Computer Engineering (Diploma + B.Tech), I blend solid technical skills with a deep passion for tech. I enjoy working across the stack—using tools like React, Node.js, and Docker—and love creating solutions that have real-world impact.",
+        "I’m a Full Stack Developer with 3 years of experience building scalable web applications at [CultureX](https://www.influenzer.io/). With a background in Computer Engineering (Diploma + B.Tech), I blend solid technical skills with a deep passion for tech. I enjoy working across the stack—using tools like Node.js, React, Express and Docker—and love creating solutions that have real-world impact.",
     avatarUrl: "/me.jpg",
     skills: [
         "Express",
@@ -174,33 +174,24 @@ export const DATA = {
     projects: [
         {
             title: "Open Read",
-            href: "https://chatcollect.com",
-            dates: "Jan 2024 - Feb 2024",
+            href: "https://github.com/surajkuushwaha/open-read",
+            dates: "Jan 2025 - Feb 2025",
             active: true,
             description:
-                "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-            technologies: [
-                "Next.js",
-                "Typescript",
-                "PostgreSQL",
-                "Prisma",
-                "TailwindCSS",
-                "Stripe",
-                "Shadcn UI",
-                "Magic UI",
-            ],
+                "Open Read is a powerful Chrome extension designed to enhance your browsing experience by allowing you to access and read articles and blogs across the web without the hassle of signing up or logging in.",
+            technologies: ["Javascript", "HTML/CSS"],
             links: [
                 {
-                    type: "Website",
-                    href: "https://chatcollect.com",
-                    icon: <Icons.globe className="size-3" />,
+                    type: "Source",
+                    href: "https://github.com/surajkuushwaha/open-read",
+                    icon: <Icons.github className="size-3" />,
                 },
             ],
             image: "",
             video: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
         },
         {
-            title: "Magic UI",
+            title: "My knowledge base",
             href: "https://magicui.design",
             dates: "June 2023 - Present",
             active: true,
