@@ -1,0 +1,66 @@
+---
+title: "🛠️ How to Change the Base of a Git Branch"
+publishedAt: "2025-05-29"
+summary: "Accidentally created a branch from the wrong base? Here's how to move your Git branch to the correct parent using `git rebase --onto`, with a real example."
+---
+
+Sometimes while working with Git, you may accidentally create a branch from the wrong base. Here's a common scenario:
+
+You have a tree like this:
+
+```
+(commit 1) - master
+               \
+                (commit 2) - (commit 3) - demo
+                                             \
+                                              (commit 4) - (commit 5) - PRO
+```
+
+In this case, the `PRO` branch was mistakenly created from `demo`, but you actually intended to branch it off from `master`.
+
+What you want instead is:
+
+```
+(commit 1) - master
+             |-- (commit 2) - (commit 3) - demo
+             \-- (commit 4) - (commit 5) - PRO
+```
+
+## ✅ Goal
+
+Move the `PRO` branch so it branches directly from `master`, without affecting `demo`.
+
+## 🧪 Solution — Use `git rebase --onto`
+
+Git allows you to change the base of a branch with a single command using `--onto`.
+
+### 📌 Command
+
+```bash
+git checkout PRO
+git rebase --onto master demo PRO
+```
+
+### 🧠 What It Means
+
+- `master`: the **new base** you want to move `PRO` to.
+- `demo`: the **old base** where `PRO` was originally created from.
+- `PRO`: the branch you're rebasing (you must be on this branch before running the command).
+
+This command tells Git:
+
+> "Take all commits on `PRO` that came after `demo`, and reapply them on top of `master`."
+
+## 📚 Recap
+
+If you accidentally branch off the wrong base in Git, don’t panic. You don’t need to delete or recreate your branch. Just use:
+
+```bash
+git rebase --onto <new-base> <old-base> <branch>
+```
+
+This is a clean and safe way to reorganize your commit history while keeping unrelated branches intact.
+
+---
+
+**Tip:** Always double-check your work with `git log --graph` or a visual tool before and after rebasing.
