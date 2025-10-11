@@ -8,7 +8,7 @@ export const DATA = {
     location: "Ahmedabad Gujarat, IN",
     locationLink: "https://www.google.com/maps/place/ahmedabad",
     description:
-        "Software Developer Engineer",
+        "Software Development Engineer specializing in Backend & Cloud Architecture",
     summary:
         "I’m a Full Stack Developer with 3 years of experience building scalable web applications at [CultureX](https://www.influenzer.io/). With a background in Computer Engineering (Diploma + B.Tech), I blend solid technical skills with a deep passion for tech. I enjoy working across the stack—using tools like Node.js, React, Express and Docker—and love creating solutions that have real-world impact.",
     avatarUrl: "/me.jpg",
