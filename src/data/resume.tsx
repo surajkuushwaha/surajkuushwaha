@@ -39,7 +39,7 @@ export const DATA = {
         { href: "/blog", icon: NotebookIcon, label: "Blog" },
     ],
     contact: {
-        email: "surajkushwaha@gmail.com",
+        email: "jobs@surajkuushwaha.com",
         tel: "+91 91067 64917",
         social: {
             GitHub: {
@@ -71,7 +71,7 @@ export const DATA = {
             // },
             email: {
                 name: "Send Email",
-                url: "mailto:surajkuushwaha@gmail.com",
+                url: "mailto:jobs@surajkuushwaha.com",
                 icon: Icons.email,
 
                 navbar: true,
