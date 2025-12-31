@@ -1,18 +1,11 @@
 "use client";
 
-import {
-    AnimatePresence,
-    motion,
-    useInView,
-    UseInViewOptions,
-    Variants,
-    MotionProps,
-} from "motion/react";
+import { motion, useInView, UseInViewOptions, Variants } from "motion/react";
 import { useRef } from "react";
 
 type MarginType = UseInViewOptions["margin"];
 
-interface BlurFadeProps extends MotionProps {
+interface BlurFadeProps {
     children: React.ReactNode;
     className?: string;
     variant?: {
@@ -27,6 +20,7 @@ interface BlurFadeProps extends MotionProps {
     inViewMargin?: MarginType;
     blur?: string;
 }
+
 const BlurFade = ({
     children,
     className,
@@ -38,11 +32,11 @@ const BlurFade = ({
     inView = false,
     inViewMargin = "-50px",
     blur = "6px",
-    ...props
 }: BlurFadeProps) => {
     const ref = useRef(null);
     const inViewResult = useInView(ref, { once: true, margin: inViewMargin });
     const isInView = !inView || inViewResult;
+
     const defaultVariants: Variants = {
         hidden: {
             [direction === "left" || direction === "right" ? "x" : "y"]:
@@ -58,26 +52,25 @@ const BlurFade = ({
             filter: `blur(0px)`,
         },
     };
+
     const combinedVariants = variant || defaultVariants;
+
     return (
-        <AnimatePresence>
-            <motion.div
-                ref={ref}
-                initial="hidden"
-                animate={isInView ? "visible" : "hidden"}
-                exit="hidden"
-                variants={combinedVariants}
-                transition={{
-                    delay: 0.04 + delay,
-                    duration,
-                    ease: "easeOut",
-                }}
-                className={className}
-                {...props}
-            >
-                {children}
-            </motion.div>
-        </AnimatePresence>
+        <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={combinedVariants}
+            transition={{
+                delay: 0.04 + delay,
+                duration,
+                ease: "easeOut",
+            }}
+            className={className}
+        >
+            {children}
+        </motion.div>
     );
 };
+
 export default BlurFade;
