@@ -108,9 +108,9 @@ export const ExperienceCard = ({
                     >
                         {description && <div className="mb-2">{description}</div>}
                         {bullets && bullets.length > 0 && (
-                            <ul className="list-disc list-inside space-y-1 ml-2">
+                            <ul className="list-disc space-y-2 ml-4 pb-2">
                                 {bullets.map((bullet, index) => (
-                                    <li key={index} className="text-muted-foreground">
+                                    <li key={index} className="text-muted-foreground pl-1">
                                         {bullet}
                                     </li>
                                 ))}

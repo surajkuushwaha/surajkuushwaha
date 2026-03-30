@@ -10,7 +10,7 @@ export const DATA = {
     description:
         "SDE II | Backend Architect | Agentic AI & High-Scale Systems",
     summary:
-        "SDE II at an [IIM Ahmedabad](https://www.iima.ac.in/)-funded B2B SaaS startup. Joined at Day 0 — scaled it from a single MVP to 200+ brands processing 50M+ weekly requests. 30+ enterprise database migrations. Zero downtime. Now building Agentic AI workflows with [LangGraph](https://www.langchain.com/langgraph). My goal: bridge the gap between 50 million and 1 billion requests.",
+        "SDE II at an [IIM Ahmedabad](https://www.iima.ac.in/)-funded B2B SaaS startup. Joined at Day 0, scaled it from a single MVP to 200+ brands processing 50M+ weekly requests. 30+ enterprise database migrations. Zero downtime. Now building Agentic AI workflows with [LangGraph](https://www.langchain.com/langgraph). My goal: bridge the gap between 50 million and 1 billion requests.",
     avatarUrl: "/me.jpg",
     skills: {
         "Backend": ["Node.js", "Express", "TypeScript", "Go", "Core Java", "Zod"],
@@ -77,7 +77,7 @@ export const DATA = {
             end: "Present",
             bullets: [
                 "Scaled the platform from a single MVP to 200+ enterprise brands processing 50M+ weekly requests on AWS (EC2, Lambda, SQS, SNS, EventBridge).",
-                "Architected the Campaign Report engine — tracks and generates reports for 50,000+ posts daily with real-time delivery for 200+ brands.",
+                "Architected the Campaign Report engine that tracks and generates reports for 50,000+ posts daily with real-time delivery for 200+ brands.",
                 "Led zero-downtime migration of 30+ enterprise database environments into a unified, multi-tenant SaaS architecture.",
                 "Reduced client onboarding from days to minutes through automated domain provisioning and UI whitelabeling.",
                 "Built event-driven automation systems using AWS EventBridge, SNS/SQS, and Lambda for real-time brand monitoring and cron-based workflows.",
