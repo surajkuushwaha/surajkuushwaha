@@ -1,47 +1,32 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
+# Suraj Kushwaha Portfolio
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+Personal portfolio site for **Suraj Kushwaha**, SDE II specializing in backend architecture, high-scale systems, and Agentic AI.
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+## About
 
-# Features
+I'm a Backend Architect at an IIM Ahmedabad-funded B2B SaaS startup. I joined at Day 0 and scaled the platform from a single MVP to 200+ enterprise brands processing 50M+ weekly requests. Currently building Agentic AI workflows with LangGraph.
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+## Tech Stack
 
-# Getting Started Locally
+- **Framework:** Next.js 15, React 19, TypeScript
+- **Styling:** TailwindCSS, shadcn/ui, Magic UI
+- **Animations:** Framer Motion
+- **Deployment:** Vercel
+- **Blog:** MDX with syntax highlighting
 
-1. Clone this repository to your local machine:
+## Running Locally
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+```bash
+git clone https://github.com/surajkuushwaha/portfolio-2025
+cd portfolio-2025
+npm install
+npm run dev
+```
 
-2. Move to the cloned directory
+## Connect
 
-   ```bash
-   cd portfolio
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   pnpm install
-   ```
-
-4. Start the local Server:
-
-   ```bash
-   pnpm dev
-   ```
-
-5. Open the [Config file](./src/data/resume.tsx) and make changes
-
-# License
-
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+- **Portfolio:** [surajkuushwaha.com](https://surajkuushwaha.com)
+- **GitHub:** [github.com/surajkuushwaha](https://github.com/surajkuushwaha)
+- **LinkedIn:** [linkedin.com/in/surajkuushwaha](https://www.linkedin.com/in/surajkuushwaha)
+- **X:** [x.com/surajkuushwaha](https://x.com/surajkuushwaha)
+- **Email:** work@surajkuushwaha.com
