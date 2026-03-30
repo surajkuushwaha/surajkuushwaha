@@ -57,15 +57,31 @@ export default function Page() {
                     <BlurFade delay={BLUR_FADE_DELAY * 5}>
                         <h2 className="text-xl font-bold">Skills</h2>
                     </BlurFade>
-                    <div className="flex flex-wrap gap-1">
-                        {DATA.skills.map((skill, id) => (
-                            <BlurFade
-                                key={skill}
-                                delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-                            >
-                                <Badge key={skill}>{skill}</Badge>
-                            </BlurFade>
-                        ))}
+                    <div className="flex flex-col gap-y-4">
+                        {Object.entries(DATA.skills).map(
+                            ([category, skills], categoryIdx) => (
+                                <BlurFade
+                                    key={category}
+                                    delay={
+                                        BLUR_FADE_DELAY * 6 +
+                                        categoryIdx * 0.1
+                                    }
+                                >
+                                    <div className="flex flex-col gap-y-2">
+                                        <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                                            {category}
+                                        </span>
+                                        <div className="flex flex-wrap gap-1">
+                                            {skills.map((skill) => (
+                                                <Badge key={skill}>
+                                                    {skill}
+                                                </Badge>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </BlurFade>
+                            ),
+                        )}
                     </div>
                 </div>
             </section>
