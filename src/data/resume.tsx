@@ -12,28 +12,15 @@ export const DATA = {
     summary:
         "SDE II at an [IIM Ahmedabad](https://www.iima.ac.in/)-funded B2B SaaS startup. Joined at Day 0 — scaled it from a single MVP to 200+ brands processing 50M+ weekly requests. 30+ enterprise database migrations. Zero downtime. Now building Agentic AI workflows with [LangGraph](https://www.langchain.com/langgraph). My goal: bridge the gap between 50 million and 1 billion requests.",
     avatarUrl: "/me.jpg",
-    skills: [
-        "Express",
-        "Linux",
-        "Nodejs",
-        "MySql",
-        "Sequelize",
-        "MongoDB",
-        "Typescript",
-        "React",
-        "Next.js",
-        "Postgres",
-        "Docker",
-        "Posthog",
-        "Winston",
-        "Git",
-        "GitHub",
-        "PostgreSQL",
-        "TailwindCSS",
-        "CI/CD",
-        // "Kubernetes",
-        "Core Java",
-    ],
+    skills: {
+        "Backend": ["Node.js", "Express", "TypeScript", "Go", "Core Java", "Zod"],
+        "Cloud & Infra": ["AWS", "AWS Lambda", "SNS", "SQS", "EventBridge", "Docker", "CI/CD", "Linux"],
+        "AI/ML": ["LangGraph", "Agentic AI", "LLM Orchestration", "Tool-Calling"],
+        "Databases": ["MySQL", "PostgreSQL", "MongoDB", "Sequelize"],
+        "Observability": ["Prometheus", "Grafana", "Loki", "Winston", "PostHog"],
+        "Frontend": ["React", "Next.js", "TailwindCSS"],
+        "Tools": ["Git", "GitHub"],
+    } as Record<string, string[]>,
     navbar: [
         { href: "/", icon: HomeIcon, label: "Home" },
         { href: "/blog", icon: NotebookIcon, label: "Blog" },
@@ -242,4 +229,4 @@ export const DATA = {
         //     video: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
         // },
     ],
-} as const;
+};
