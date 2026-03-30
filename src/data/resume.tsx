@@ -8,39 +8,25 @@ export const DATA = {
     location: "Ahmedabad Gujarat, IN",
     locationLink: "https://www.google.com/maps/place/ahmedabad",
     description:
-        "Software Development Engineer specializing in Backend & Cloud Architecture",
+        "SDE II | Backend Architect | Agentic AI & High-Scale Systems",
     summary:
-        "I’m a Full Stack Developer with 3 years of experience building scalable web applications at [CultureX](https://www.influenzer.io/). With a background in Computer Engineering (Diploma + B.Tech), I blend solid technical skills with a deep passion for tech. I enjoy working across the stack—using tools like Node.js, React, Express and Docker—and love creating solutions that have real-world impact.",
+        "SDE II at an [IIM Ahmedabad](https://www.iima.ac.in/)-funded B2B SaaS startup. Joined at Day 0, scaled it from a single MVP to 200+ brands processing 50M+ weekly requests. 30+ enterprise database migrations. Zero downtime. Now building Agentic AI workflows with [LangGraph](https://www.langchain.com/langgraph). My goal: bridge the gap between 50 million and 1 billion requests.",
     avatarUrl: "/me.jpg",
-    skills: [
-        "Express",
-        "Linux",
-        "Nodejs",
-        "MySql",
-        "Sequelize",
-        "MongoDB",
-        "Typescript",
-        "React",
-        "Next.js",
-        "Postgres",
-        "Docker",
-        "Posthog",
-        "Winston",
-        "Git",
-        "GitHub",
-        "PostgreSQL",
-        "TailwindCSS",
-        "CI/CD",
-        // "Kubernetes",
-        "Core Java",
-    ],
+    skills: {
+        "Backend": ["Node.js", "Express", "TypeScript", "Go", "Core Java", "Zod"],
+        "Cloud & Infra": ["AWS", "AWS Lambda", "SNS", "SQS", "EventBridge", "Docker", "CI/CD", "Linux"],
+        "AI/ML": ["LangGraph", "Agentic AI", "LLM Orchestration", "Tool-Calling"],
+        "Databases": ["MySQL", "PostgreSQL", "MongoDB", "Sequelize"],
+        "Observability": ["Prometheus", "Grafana", "Loki", "Winston", "PostHog"],
+        "Frontend": ["React", "Next.js", "TailwindCSS"],
+        "Tools": ["Git", "GitHub"],
+    } as Record<string, string[]>,
     navbar: [
         { href: "/", icon: HomeIcon, label: "Home" },
         { href: "/blog", icon: NotebookIcon, label: "Blog" },
     ],
     contact: {
-        email: "jobs@surajkuushwaha.com",
-        tel: "+91 91067 64917",
+        email: "work@surajkuushwaha.com",
         social: {
             GitHub: {
                 name: "GitHub",
@@ -71,7 +57,7 @@ export const DATA = {
             // },
             email: {
                 name: "Send Email",
-                url: "mailto:jobs@surajkuushwaha.com",
+                url: "mailto:work@surajkuushwaha.com",
                 icon: Icons.email,
 
                 navbar: true,
@@ -85,17 +71,19 @@ export const DATA = {
             href: "https://www.culturex.ai",
             badges: [],
             location: "Hybrid",
-            title: "SDE I",
+            title: "SDE II",
             logoUrl: "/culturex.png",
             start: "Jul 2022",
             end: "Present",
             bullets: [
-                "Architected and scaled backend microservices on AWS (EC2, SQS, Lambda), handling over 5 million requests per month to power B2B SaaS products for 100+ global brands.",
-                "Led a strategic migration from a siloed, multi-database architecture to a unified SaaS model, designing and executing a zero-downtime migration for 30+ legacy clients.",
-                "Owned the end-to-end development of a public-facing microservice, transforming an internal tool into a sellable API product and managing its full lifecycle from design to maintenance.",
-                "Developed and launched 10+ MVPs from the ground up, securing the company's first client and establishing the core foundation of influencer marketing platform.",
-                "Contributed as a core backend developer using Node.js, TypeScript, and MySQL, driving architectural decisions and overseeing the full development lifecycle from design to deployment.",
-                "Engineered event-driven social listening automation leveraging AWS EventBridge schedulers, SNS/SQS message queues, and worker services with idempotent batch processing for real-time brand mention tracking.",
+                "Scaled the platform from a single MVP to 200+ enterprise brands processing 50M+ weekly requests on AWS (EC2, Lambda, SQS, SNS, EventBridge).",
+                "Architected the Campaign Report engine that tracks and generates reports for 50,000+ posts daily with real-time delivery for 200+ brands.",
+                "Led zero-downtime migration of 30+ enterprise database environments into a unified, multi-tenant SaaS architecture.",
+                "Reduced client onboarding from days to minutes through automated domain provisioning and UI whitelabeling.",
+                "Built event-driven automation systems using AWS EventBridge, SNS/SQS, and Lambda for real-time brand monitoring and cron-based workflows.",
+                "Shifted the codebase from JavaScript to Strict TypeScript with Zod validation, eliminating runtime crashes.",
+                "Built Agentic AI workflows for No-Touch Negotiation using LangGraph with deterministic tool-calling and LLM orchestration.",
+                "Implemented full observability stack with Prometheus, Grafana, and Loki for monitoring and alerting.",
             ],
         },
     ] as Array<{
@@ -114,7 +102,7 @@ export const DATA = {
         {
             school: "Government Engineering College, Modasa",
             href: "https://www.gecmodasa.ac.in/",
-            degree: "Bachelor's Degree of Computer Engineering",
+            degree: "B.Tech in Computer Engineering (GTU)",
             logoUrl: "/gec_modasa.png",
             start: "2020",
             end: "2023",
@@ -122,7 +110,7 @@ export const DATA = {
         {
             school: "Ranchhodlal Chhotalal Technical Institute",
             href: null,
-            degree: "Diploma in Computer Engineering",
+            degree: "Diploma in Computer Engineering (GTU)",
             logoUrl: "/rc_technical.png",
             start: "2017",
             end: "2020",
@@ -241,4 +229,4 @@ export const DATA = {
         //     video: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
         // },
     ],
-} as const;
+};

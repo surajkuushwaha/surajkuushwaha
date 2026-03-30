@@ -22,7 +22,7 @@ export default function Page() {
                                 delay={BLUR_FADE_DELAY}
                                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                                 yOffset={8}
-                                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👾`}
+                                text={DATA.name}
                             />
                             <BlurFadeText
                                 className="max-w-[600px] md:text-xl"
@@ -57,15 +57,31 @@ export default function Page() {
                     <BlurFade delay={BLUR_FADE_DELAY * 5}>
                         <h2 className="text-xl font-bold">Skills</h2>
                     </BlurFade>
-                    <div className="flex flex-wrap gap-1">
-                        {DATA.skills.map((skill, id) => (
-                            <BlurFade
-                                key={skill}
-                                delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-                            >
-                                <Badge key={skill}>{skill}</Badge>
-                            </BlurFade>
-                        ))}
+                    <div className="flex flex-col gap-y-4">
+                        {Object.entries(DATA.skills).map(
+                            ([category, skills], categoryIdx) => (
+                                <BlurFade
+                                    key={category}
+                                    delay={
+                                        BLUR_FADE_DELAY * 6 +
+                                        categoryIdx * 0.1
+                                    }
+                                >
+                                    <div className="flex flex-col gap-y-2">
+                                        <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                                            {category}
+                                        </span>
+                                        <div className="flex flex-wrap gap-1">
+                                            {skills.map((skill) => (
+                                                <Badge key={skill}>
+                                                    {skill}
+                                                </Badge>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </BlurFade>
+                            ),
+                        )}
                     </div>
                 </div>
             </section>
@@ -115,7 +131,7 @@ export default function Page() {
                                 altText={education.school}
                                 title={education.school}
                                 subtitle={education.degree}
-                                period={`${education.start} - ${education.end}`}
+                                period=""
                             />
                         </BlurFade>
                     ))}
@@ -171,12 +187,12 @@ export default function Page() {
                                 Contact
                             </div>
                             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                                Get in Touch
+                                Let&apos;s build something at scale.
                             </h2>
                             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                I&apos;m always open to discussing new
-                                opportunities, collaborations, or interesting
-                                projects. Drop me an{" "}
+                                I&apos;m always open to discussing high-scale
+                                systems, backend architecture, or AI
+                                engineering. Drop me an{" "}
                                 <Link
                                     href={`mailto:${DATA.contact.email}`}
                                     className="text-blue-500 hover:underline"
