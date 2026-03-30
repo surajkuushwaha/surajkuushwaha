@@ -187,12 +187,12 @@ export default function Page() {
                                 Contact
                             </div>
                             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                                Get in Touch
+                                Let&apos;s build something at scale.
                             </h2>
                             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                I&apos;m always open to discussing new
-                                opportunities, collaborations, or interesting
-                                projects. Drop me an{" "}
+                                I&apos;m always open to discussing high-scale
+                                systems, backend architecture, or AI
+                                engineering. Drop me an{" "}
                                 <Link
                                     href={`mailto:${DATA.contact.email}`}
                                     className="text-blue-500 hover:underline"
