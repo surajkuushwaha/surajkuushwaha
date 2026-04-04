@@ -22,7 +22,20 @@ const config = {
         },
         extend: {
             fontFamily: {
-                sans: ["var(--font-sans)", ...fontFamily.sans],
+                sans: ["var(--font-geist-sans)", ...fontFamily.sans],
+                mono: ["var(--font-geist-mono)", ...fontFamily.mono],
+            },
+            letterSpacing: {
+                display:      "-2.4px",
+                heading:      "-2.4px",
+                subheading:   "-1.28px",
+                "card-title": "-0.96px",
+                ui:           "-0.32px",
+            },
+            boxShadow: {
+                card:        "rgba(0,0,0,0.08) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 2px, rgba(0,0,0,0.04) 0px 8px 8px -8px, #fafafa 0px 0px 0px 1px inset",
+                "card-hover":"rgba(0,0,0,0.12) 0px 0px 0px 1px, rgba(0,0,0,0.06) 0px 4px 4px, rgba(0,0,0,0.06) 0px 12px 12px -8px, #fafafa 0px 0px 0px 1px inset",
+                border:      "rgba(0,0,0,0.08) 0px 0px 0px 1px",
             },
             colors: {
                 border: "hsl(var(--border))",
