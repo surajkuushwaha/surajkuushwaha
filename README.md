@@ -1,32 +1,21 @@
-# Suraj Kushwaha Portfolio
+[wakatime](https://wakatime.com/@018bc7d2-17b3-4d49-95b6-eb44f04a75af)
 
-Personal portfolio site for **Suraj Kushwaha**, SDE II specializing in backend architecture, high-scale systems, and Agentic AI.
 
-## About
+```shell
+[Now] suraj :: linux  ➜ cowsay "Hey! I'm Suraj Kushwaha."
 
-I'm a Backend Architect at an IIM Ahmedabad-funded B2B SaaS startup. I joined at Day 0 and scaled the platform from a single MVP to 200+ enterprise brands processing 50M+ weekly requests. Currently building Agentic AI workflows with LangGraph.
-
-## Tech Stack
-
-- **Framework:** Next.js 15, React 19, TypeScript
-- **Styling:** TailwindCSS, shadcn/ui, Magic UI
-- **Animations:** Framer Motion
-- **Deployment:** Vercel
-- **Blog:** MDX with syntax highlighting
-
-## Running Locally
-
-```bash
-git clone https://github.com/surajkuushwaha/portfolio-2025
-cd portfolio-2025
-npm install
-npm run dev
+ __________________________
+< Hey! I'm Suraj Kushwaha. >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
 ```
 
-## Connect
+SDE II · Backend Architect · Agentic AI  
+Scaled a B2B SaaS from MVP → 200+ brands · 50M+ weekly requests · 30+ zero-downtime migrations  
+Currently building Agentic AI with LangGraph
 
-- **Portfolio:** [surajkuushwaha.com](https://surajkuushwaha.com)
-- **GitHub:** [github.com/surajkuushwaha](https://github.com/surajkuushwaha)
-- **LinkedIn:** [linkedin.com/in/surajkuushwaha](https://www.linkedin.com/in/surajkuushwaha)
-- **X:** [x.com/surajkuushwaha](https://x.com/surajkuushwaha)
-- **Email:** work@surajkuushwaha.com
+`Node.js` `TypeScript` `Go` `AWS` `LangGraph` `PostgreSQL` `Docker` `React`

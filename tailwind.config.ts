@@ -38,6 +38,11 @@ const config = {
                 border:      "rgba(0,0,0,0.08) 0px 0px 0px 1px",
             },
             colors: {
+                badge: {
+                    bg:    "#ebf5ff",
+                    text:  "#0068d6",
+                    hover: "#dbeeff",
+                },
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
                 ring: "hsl(var(--ring))",
