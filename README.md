@@ -1,4 +1,4 @@
-[wakatime](https://wakatime.com/@018bc7d2-17b3-4d49-95b6-eb44f04a75af)
+[![wakatime](https://wakatime.com/badge/user/018bc7d2-17b3-4d49-95b6-eb44f04a75af.svg)](https://wakatime.com/@018bc7d2-17b3-4d49-95b6-eb44f04a75af)
 
 
 ```shell
