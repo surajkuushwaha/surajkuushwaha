@@ -46,7 +46,7 @@ export const ExperienceCard = ({
     };
 
     const mainCard = (
-        <Card className="flex">
+        <Card className="flex shadow-card">
             <div className="flex-none">
                 <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
                     <AvatarImage
