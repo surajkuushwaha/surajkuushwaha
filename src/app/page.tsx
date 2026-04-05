@@ -44,7 +44,7 @@ export default function Page() {
             </section>
             <section id="about">
                 <BlurFade delay={BLUR_FADE_DELAY * 3}>
-                    <h2 className="text-[40px] font-semibold tracking-heading leading-tight">About</h2>
+                    <h2 className="text-2xl font-semibold tracking-heading leading-tight">About</h2>
                 </BlurFade>
                 <BlurFade delay={BLUR_FADE_DELAY * 4}>
                     <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
@@ -55,7 +55,7 @@ export default function Page() {
             <section id="skills">
                 <div className="flex min-h-0 flex-col gap-y-3">
                     <BlurFade delay={BLUR_FADE_DELAY * 5}>
-                        <h2 className="text-[40px] font-semibold tracking-heading leading-tight">Skills</h2>
+                        <h2 className="text-2xl font-semibold tracking-heading leading-tight">Skills</h2>
                     </BlurFade>
                     <div className="flex flex-col gap-y-4">
                         {Object.entries(DATA.skills).map(
@@ -88,7 +88,7 @@ export default function Page() {
             <section id="work">
                 <div className="flex min-h-0 flex-col gap-y-3">
                     <BlurFade delay={BLUR_FADE_DELAY * 7}>
-                        <h2 className="text-[40px] font-semibold tracking-heading leading-tight">Work Experience</h2>
+                        <h2 className="text-2xl font-semibold tracking-heading leading-tight">Work Experience</h2>
                     </BlurFade>
                     {DATA.work.length > 0
                         ? DATA.work.map((work, id) => (
@@ -117,7 +117,7 @@ export default function Page() {
             <section id="education">
                 <div className="flex min-h-0 flex-col gap-y-3">
                     <BlurFade delay={BLUR_FADE_DELAY * 9}>
-                        <h2 className="text-[40px] font-semibold tracking-heading leading-tight">Education</h2>
+                        <h2 className="text-2xl font-semibold tracking-heading leading-tight">Education</h2>
                     </BlurFade>
                     {DATA.education.map((education, id) => (
                         <BlurFade
