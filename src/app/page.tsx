@@ -20,7 +20,7 @@ export default function Page() {
                         <div className="flex-col flex flex-1 space-y-1.5">
                             <BlurFadeText
                                 delay={BLUR_FADE_DELAY}
-                                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                                className="text-3xl font-semibold tracking-display sm:text-5xl xl:text-6xl/none"
                                 yOffset={8}
                                 text={DATA.name}
                             />
@@ -44,7 +44,7 @@ export default function Page() {
             </section>
             <section id="about">
                 <BlurFade delay={BLUR_FADE_DELAY * 3}>
-                    <h2 className="text-xl font-bold">About</h2>
+                    <h2 className="text-[40px] font-semibold tracking-heading leading-tight">About</h2>
                 </BlurFade>
                 <BlurFade delay={BLUR_FADE_DELAY * 4}>
                     <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
@@ -55,7 +55,7 @@ export default function Page() {
             <section id="skills">
                 <div className="flex min-h-0 flex-col gap-y-3">
                     <BlurFade delay={BLUR_FADE_DELAY * 5}>
-                        <h2 className="text-xl font-bold">Skills</h2>
+                        <h2 className="text-[40px] font-semibold tracking-heading leading-tight">Skills</h2>
                     </BlurFade>
                     <div className="flex flex-col gap-y-4">
                         {Object.entries(DATA.skills).map(
@@ -68,7 +68,7 @@ export default function Page() {
                                     }
                                 >
                                     <div className="flex flex-col gap-y-2">
-                                        <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                                        <span className="text-xs font-semibold text-muted-foreground uppercase tracking-normal">
                                             {category}
                                         </span>
                                         <div className="flex flex-wrap gap-1">
@@ -88,7 +88,7 @@ export default function Page() {
             <section id="work">
                 <div className="flex min-h-0 flex-col gap-y-3">
                     <BlurFade delay={BLUR_FADE_DELAY * 7}>
-                        <h2 className="text-xl font-bold">Work Experience</h2>
+                        <h2 className="text-[40px] font-semibold tracking-heading leading-tight">Work Experience</h2>
                     </BlurFade>
                     {DATA.work.length > 0
                         ? DATA.work.map((work, id) => (
@@ -117,7 +117,7 @@ export default function Page() {
             <section id="education">
                 <div className="flex min-h-0 flex-col gap-y-3">
                     <BlurFade delay={BLUR_FADE_DELAY * 9}>
-                        <h2 className="text-xl font-bold">Education</h2>
+                        <h2 className="text-[40px] font-semibold tracking-heading leading-tight">Education</h2>
                     </BlurFade>
                     {DATA.education.map((education, id) => (
                         <BlurFade
@@ -145,7 +145,7 @@ export default function Page() {
                                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                                     My Projects
                                 </div>
-                                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                                <h2 className="text-3xl font-semibold tracking-display sm:text-5xl">
                                     Check out my latest work
                                 </h2>
                                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -186,7 +186,7 @@ export default function Page() {
                             <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                                 Contact
                             </div>
-                            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                            <h2 className="text-3xl font-semibold tracking-display sm:text-5xl">
                                 Let&apos;s build something at scale.
                             </h2>
                             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
