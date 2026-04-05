@@ -43,7 +43,7 @@ export function ProjectCard({
     return (
         <Card
             className={
-                "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
+                "flex flex-col overflow-hidden shadow-card hover:shadow-card-hover transition-shadow duration-300 ease-out h-full"
             }
         >
             <Link
@@ -72,7 +72,7 @@ export function ProjectCard({
             </Link>
             <CardHeader className="px-2">
                 <div className="space-y-1">
-                    <CardTitle className="mt-1 text-base">{title}</CardTitle>
+                    <CardTitle className="mt-1 text-base font-medium tracking-ui">{title}</CardTitle>
                     <time className="font-sans text-xs">{dates}</time>
                     <div className="hidden font-sans text-xs underline print:visible">
                         {link
