@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 
 export const alt =
-    "Suraj Kushwaha — SDE II | Backend Architect | Agentic AI & High-Scale Systems";
+    "Suraj Kushwaha — SDE II • Backend Architect • Agentic AI Systems at Scale";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -74,7 +74,7 @@ export default function OGImage() {
                         lineHeight: 1.4,
                     }}
                 >
-                    SDE II | Backend Architect | Agentic AI & High-Scale Systems
+                    SDE II • Backend Architect • Agentic AI Systems at Scale
                 </p>
                 <div
                     style={{

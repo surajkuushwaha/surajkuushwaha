@@ -7,8 +7,7 @@ export const DATA = {
     url: "https://surajkuushwaha.com",
     location: "Ahmedabad Gujarat, IN",
     locationLink: "https://www.google.com/maps/place/ahmedabad",
-    description:
-        "SDE II | Backend Architect | Agentic AI & High-Scale Systems",
+    description: "SDE II • Backend Architect • Agentic AI Systems at Scale",
     summary:
         "SDE II at an [IIM Ahmedabad](https://www.iima.ac.in/)-funded B2B SaaS startup. Joined at Day 0, scaled it from a single MVP to 200+ brands processing 50M+ weekly requests. 30+ enterprise database migrations. Zero downtime. Now building Agentic AI workflows with [LangGraph](https://www.langchain.com/langgraph). My goal: bridge the gap between 50 million and 1 billion requests.",
     avatarUrl: "/me.jpg",
