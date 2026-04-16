@@ -5,7 +5,10 @@
 ###
 
 <div align="left">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=surajkuushwaha.surajkuushwaha&"  />
+  <a href="https://wakatime.com/@018bc7d2-17b3-4d49-95b6-eb44f04a75af">
+    <img src="https://wakatime.com/badge/user/018bc7d2-17b3-4d49-95b6-eb44f04a75af.svg" alt="wakatime" />
+  </a> <span>&nbsp;</span>
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=surajkuushwaha.surajkuushwaha" alt="visitor badge" />
 </div>
 
 <!-- ###
