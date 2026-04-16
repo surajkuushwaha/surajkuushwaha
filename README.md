@@ -8,7 +8,7 @@
   <img src="https://visitor-badge.laobi.icu/badge?page_id=surajkuushwaha.surajkuushwaha&"  />
 </div>
 
-###
+<!-- ###
 
 <p align="left">SDE II · Backend Architect · Agentic AI</p>
 
@@ -52,9 +52,9 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" height="40" alt="googlecloud logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="nextjs logo"  />
-</div>
+</div> -->
 
-###
+<!-- ###
 
 <div align="left">
   <a href="https://www.linkedin.com/in/surajkuushwaha/" target="_blank">
@@ -63,7 +63,7 @@
   <a href="https://x.com/surajkuushwaha" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="52" height="40" alt="twitter logo"  />
   </a>
-</div>
+</div> -->
 
 ###
 
