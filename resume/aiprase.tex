@@ -1,0 +1,233 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Suraj Kushwaha
+%-------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Suraj Kushwaha} \\ \vspace{4pt}
+    \small
+    \faPhone\ +91\,91067\,64917 \enspace $|$ \enspace
+    \href{mailto:work@surajkuushwaha.com}{\faEnvelope\ work@surajkuushwaha.com} \enspace $|$ \enspace
+    \href{https://github.com/surajkuushwaha}{\faGithub\ surajkuushwaha} \enspace $|$ \enspace
+    \href{https://linkedin.com/in/surajkuushwaha}{\faLinkedin\ surajkuushwaha}
+\end{center}
+
+%-----------SNAPSHOT-----------
+% \section{At a Glance}
+% \begin{tabular*}{\textwidth}{l@{\hspace{6pt}}l}
+%   \small\textbf{What I build:}   & \small Distributed \textbf{Python}/\textbf{Go} backends, event-driven microservices, and public APIs at production scale \\[4pt]
+%   \small\textbf{What I've done:} & \small \textbf{100M+ req/month} at $<$100ms p99 \enspace $\cdot$ \enspace \textbf{35\%} latency cut \enspace $\cdot$ \enspace \textbf{99.98\%} uptime across 30+ deployments \enspace $\cdot$ \enspace \textbf{3$\times$} API adoption \enspace $\cdot$ \enspace \textbf{40\%} MTTR reduction \\
+% \end{tabular*}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{
+Infrastructure \& platform engineer focused on event-driven architecture and reliability at scale. I build the \textbf{Python}/\textbf{Go} systems behind \textbf{100M+} monthly requests, own public APIs end-to-end, and increasingly ship LLM-backed features (LangChain, embeddings, eval gating) into production.
+}
+
+\vspace{4pt}
+
+\vspace{4pt}
+
+\vspace{4pt}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Backend Engineer - Infrastructure \& Platform}{July 2022 - Present}
+      {CultureX Entertainment Private Limited}{Gujarat, India}
+      \resumeItemListStart
+
+        \resumeItem{
+          \textbf{Distributed Systems \& Scale:} Reduced p99 API latency by \textbf{35\%} and sustained \textbf{100M+ monthly requests} at sub-100ms response time by redesigning a monolithic pipeline into event-driven microservices using \textbf{Python (Celery)}, \textbf{Go} workers, AWS SQS, EventBridge, and Lambda - with idempotent batch processing and distributed concurrency controls preventing duplicate state under fan-out load.
+        }
+
+        \resumeItem{
+          \textbf{Public API Product:} Grew external developer adoption \textbf{3$\times$} in two quarters by owning the full lifecycle of a versioned REST API - schema design, rate-limiting, and OpenAPI docs - enabling zero-touch partner integration and reducing inbound engineering support requests to near zero.
+        }
+
+        \resumeItem{
+          \textbf{Zero-Downtime Migration:} Delivered \textbf{99.98\% uptime} through a 6-month live migration of 30+ global brand tenants from fragmented multi-database silos to a unified cloud-native SaaS architecture on AWS (EC2, RDS, S3), cutting data-consistency incidents by \textbf{80\%} with no customer-facing outage.
+        }
+
+        \resumeItem{
+          \textbf{Observability:} Reduced MTTR for production incidents by \textbf{40\%} by instrumenting end-to-end distributed tracing, structured JSON logging, and CloudWatch anomaly alerts - shifting the team from reactive firefighting to proactive detection.
+        }
+
+        \resumeItem{
+          \textbf{AI Feature Delivery:} Shipped content classification and trend-summarization features to \textbf{50+ brand analysts daily} by building \textbf{Python} microservices integrating LangChain, OpenAI, and LangGraph - with LangSmith evals gating each model update before production rollout.
+        }
+
+        \resumeItem{
+          \textbf{Delivery Velocity:} Launched \textbf{10+ production MVPs} in 18 months by standardizing Docker-based environments, reusable TypeScript service abstractions, and GitHub Actions CI/CD - cutting new-service setup from 2 days to under 2 hours.
+        }
+
+        \resumeItem{
+          \textbf{Team Leverage:} Sped up code-review cycles by \textbf{30\%} and raised bar on two junior engineers by introducing TypeScript style guides and mandatory performance checkpoints in CI - catching regression before it reached staging.
+        }
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+% \section{Key Projects}
+%   \resumeSubHeadingListStart
+
+%     \resumeProjectHeading
+%     % don't use terms like Mastermind d
+%     % add numbers(like processing 10k creators in x time)
+%     % add optimization number(tech side)
+%     % how much time AI saved for getting creator from breif 
+%       {\textbf{Mastermind} $|$ \emph{AI Creator-Matching Pipeline} $|$ \textit{Python, LangChain, Qdrant, OpenAI, AWS}}{}
+%       \resumeItemListStart
+
+%         \resumeItem{
+%           \textbf{Pipeline Design:} Achieved a \textbf{20:1 creator funnel ratio} (industry standard) by building an end-to-end multi-modal AI pipeline that ingests a natural-language brand brief, constructs a structured persona schema via LLM, and scores a pool of \textbf{2,000+ creator profiles} down to the top 100-200 matches per query.
+%         }
+
+%         \resumeItem{
+%           \textbf{Multi-modal Embeddings:} Improved match precision by vectorizing three independent signals per creator - reel audio (transcribed via Whisper), thumbnail visual descriptions, and post captions - using \textbf{OpenAI embedding models} stored in \textbf{Qdrant}, enabling semantic retrieval beyond keyword or follower-count filters.
+%         }
+
+%         \resumeItem{
+%           \textbf{Async Infrastructure:} Processed creator media at scale by uploading reels to \textbf{AWS S3}, extracting audio asynchronously via \textbf{SQS/SNS}, and hosting ingestion workers on \textbf{AWS Fargate} - decoupling media fetch latency from scoring latency and enabling parallel processing across the full creator pool.
+%         }
+
+%         \resumeItem{
+%           \textbf{Feedback Loop Orchestration:} Reduced irrelevant recommendations across iterative refinement cycles by designing a stateful user-feedback mechanism using \textbf{AWS Step Functions} - maintaining per-user exclusion context across re-ranking loops so each iteration tightened niche alignment without restarting the full pipeline.
+%         }
+
+%       \resumeItemListEnd
+
+%   \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Key Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+  {\textbf{AI Creator-Matching Pipeline} $|$ \textit{CultureX} $|$ \textit{TypeScript, LangChain, Qdrant, OpenAI, AWS}}{}
+      \resumeItemListStart
+
+        \resumeItem{
+          \textbf{End-to-End Impact:} Cut creator shortlisting from \textbf{4 days of manual research to under 30 minutes} by automating the full brief-to-finalist pipeline - a $\sim$190$\times$ speedup that turned a multi-day analyst task into a single query.
+        }
+
+        \resumeItem{
+          \textbf{Pipeline Design:} Built an end-to-end multi-modal AI pipeline that ingests a natural-language brand brief, constructs a structured persona schema via LLM, and scores a pool of \textbf{10,000+ creator profiles} down to the top 100-200 matches per query. % adjust shortlist size if you want it to reflect a strict 20:1 funnel (~500)
+        }
+
+        \resumeItem{
+          \textbf{Multi-modal Embeddings:} Improved match precision by vectorizing three independent signals per creator - reel audio (transcribed via Whisper), thumbnail visual descriptions, and post captions - using \textbf{OpenAI embedding models} stored in \textbf{Qdrant}, enabling semantic retrieval beyond keyword or follower-count filters.
+        }
+
+        \resumeItem{
+          \textbf{Async Infrastructure at Scale:} Processed \textbf{500,000+ media items} (reels, thumbnails, captions) by uploading reels to \textbf{AWS S3}, extracting audio asynchronously via \textbf{SQS/SNS}, and hosting ingestion workers on \textbf{AWS Fargate} - decoupling media-fetch latency from scoring latency to enable parallel processing across the full creator pool.
+        }
+
+        \resumeItem{
+          \textbf{Feedback Loop Orchestration:} Reduced irrelevant recommendations across iterative refinement cycles by designing a stateful user-feedback mechanism using \textbf{AWS Step Functions} - maintaining per-user exclusion context across re-ranking loops so each iteration tightened niche alignment without restarting the full pipeline.
+        }
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Primary:} TypeScript/Node.js (Express, Hono), Python (FastAPI), Go  \\
+     \textbf{Distributed Systems:} Event-driven architecture, message queues (SQS, SNS, EventBridge), idempotent processing, concurrency control \\
+     \textbf{Databases \& Caching:} PostgreSQL, MongoDB, MySQL, Redis \\
+     \textbf{Cloud \& Infra:} AWS (Lambda, SQS, SNS, EventBridge, S3, EC2, RDS), Docker, Kubernetes \\
+     \textbf{AI/ML Infra:} LangChain, LangGraph, LangSmith, OpenAI API \\
+     \textbf{DevOps:} GitHub Actions, CI/CD pipelines, Linux, Git
+     \textbf{Observability:} Distributed tracing, structured logging, CloudWatch, anomaly alerting \\
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Engineering - Computer Engineering}{2019 - 2022}
+      {Government Engineering College, Modasa}{Gujarat, India}
+  \resumeSubHeadingListEnd
+
+\end{document}
