@@ -79,7 +79,7 @@
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/surajkuushwaha/surajkuushwaha/output/pacman-contribution-graph.svg">
 </picture>
 
-[![Followers](https://img.shields.io/github/followers/surajkuushwaha?style=for-the-badge&logo=github&label=Followers&labelColor=002240&color=0088FF)](https://github.com/surajkuushwaha?tab=followers)
-[![Stars](https://img.shields.io/github/stars/surajkuushwaha?style=for-the-badge&logo=github&label=Stars&labelColor=002240&color=0088FF&affiliations=OWNER)](https://github.com/surajkuushwaha?tab=repositories)
-[![wakatime](https://wakatime.com/badge/user/018bc7d2-17b3-4d49-95b6-eb44f04a75af.svg)](https://wakatime.com/@018bc7d2-17b3-4d49-95b6-eb44f04a75af)
-[![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=surajkuushwaha.surajkuushwaha)](https://visitor-badge.laobi.icu/badge?page_id=surajkuushwaha.surajkuushwaha)
+[![Followers](https://img.shields.io/github/followers/surajkuushwaha?style=for-the-badge&logo=github&label=Followers&color=0088FF)](https://github.com/surajkuushwaha?tab=followers)
+[![Stars](https://img.shields.io/github/stars/surajkuushwaha?style=for-the-badge&logo=github&label=Stars&color=0088FF&affiliations=OWNER)](https://github.com/surajkuushwaha?tab=repositories)
+[![WakaTime](https://wakatime.com/badge/user/018bc7d2-17b3-4d49-95b6-eb44f04a75af.svg?style=for-the-badge&logo=wakatime&color=0088FF)](https://wakatime.com/@018bc7d2-17b3-4d49-95b6-eb44f04a75af)
+[![Profile Views](https://komarev.com/ghpvc/?username=surajkuushwaha&style=for-the-badge&color=0088FF&label=PROFILE+VIEWS&base=212)](https://github.com/surajkuushwaha)
